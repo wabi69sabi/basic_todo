@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :body %>
+    <%= form.text_field :body, id: :task_body %>
+  </div>
+
+  <div class="field">
     <%= form.label :status %>
     <%= form.check_box :status, id: :task_status %>
   </div>
