@@ -1,5 +1,8 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  # As long as there is no user model and an authentication method,
+  # JSON requests can only be passed when uncommenting the next line
+  # skip_before_action :verify_authenticity_token
 
   # GET /tasks
   # GET /tasks.json
