@@ -1,24 +1,40 @@
-# README
+# Basic To Do list app in RoR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This small TODO app is just an example of a quick scaffolded rails application that took about 30 minutes to build.
 
-Things you may want to cover:
+Requirements:
 
-* Ruby version
+- The Ruby version used in this project is ruby-2.4.1.
 
-* System dependencies
+- Ruby bundler 1.16.1 or higher
 
-* Configuration
+Most of the other requirements should install automatically with the following commands:
 
-* Database creation
+#### Setting up the application:
 
-* Database initialization
+To get started open a terminal and type:
 
-* How to run the test suite
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Set up your database:
 
-* Deployment instructions
+```
+rake db:create
+rake db:migrate
+````
 
-* ...
+To run tests just type:
+
+```
+rake test
+```
+
+To start the app:
+
+```
+rails s
+```
+
+Now just browse to ``` localhost:3000 ``` to check out the application.
